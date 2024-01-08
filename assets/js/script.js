@@ -25,6 +25,13 @@ const words = [
   let defaultLevel = "normal"
   let defaultLevelSeconds = lvls[defaultLevel]
 
+  if(localStorage.defaultLevel) {
+      defaultLevel = localStorage.defaultLevel
+      defaultLevelSeconds = lvls[defaultLevel]
+      document.getElementById(defaultLevel).checked = true;
+    }else {
+        localStorage.defaultLevel = defaultLevel
+  }
   let startButton = document.querySelector(".start")
   let lvlNameSpan = document.querySelector(".message .lvl")
   let secondsSpan = document.querySelector(".message .seconds")
@@ -56,6 +63,7 @@ const words = [
         lvlNameSpan.innerHTML = defaultLevel
   secondsSpan.innerHTML = defaultLevelSeconds
   timeLeftSpan.innerHTML =defaultLevelSeconds;
+  localStorage.defaultLevel = defaultLevel
     }
  })
 
