@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typing Speed Test" />
+    <!-- My files -->
+    <link rel="stylesheet" href="./assets/css/master.css" />
+    <title>Test Your Typing Skills</title>
+  </head>
+  <body>
+    <div class="game">
+        <div class="name">Typing Speed Test Game</div>
+        <div class="container">
+            <div class="message">Level <span class="lvl"></span> You have <span class="seconds"></span> Seconds to type the word</div>
+            <div class="select-lvl">
+              <input type="radio" name="lvl" id="easy" value="easy" >
+              <label for="easy">Easy</label>
+              <input type="radio" name="lvl" id="normal" value="normal" checked>
+              <label for="normal">Normal</label>
+              <input type="radio" name="lvl" id="hard" value="hard">
+              <label for="hard">Hard</label>
+            </div>
+            <div class="start">Start Playing</div>
+            <div class="the-word"></div>
+            <input type="text" class="input">
+            <div class="control">
+                <div class="time">Time left: <span></span> Seconds</div>
+                <div class="score">Score: <span class="got">0</span> from <span class="total"></span></div>
+            </div>
+            <div class="upcoming-words">Words will show here</div>
+            <div class="finish"></div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
