@@ -19,7 +19,7 @@ body {
     margin: auto;
     max-width: 900px;
     margin-top: 50px;
-    min-height: calc(100vh - 68.8px - 38.4px);
+    min-height: calc(100vh - 156.9px);
 }
 .name {
     background-color: var(--main-color);
