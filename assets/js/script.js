@@ -31,6 +31,7 @@ const words = [
       document.getElementById(defaultLevel).checked = true;
     }else {
         localStorage.defaultLevel = defaultLevel
+        document.getElementById(defaultLevel).checked = true;
   }
   let startButton = document.querySelector(".start")
   let lvlNameSpan = document.querySelector(".message .lvl")
