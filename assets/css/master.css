@@ -18,6 +18,8 @@ body {
 .container {
     margin: auto;
     max-width: 900px;
+    margin-top: 50px;
+    min-height: calc(100vh - 68.8px - 38.4px);
 }
 .name {
     background-color: var(--main-color);
@@ -131,4 +133,12 @@ body {
 }
 .finish .bad{
     color: red;
+}
+footer {
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
 }

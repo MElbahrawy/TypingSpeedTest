@@ -105,7 +105,7 @@ const words = [
             } else {
                 let span = document.createElement("span")
                 span.className = "bad";
-                let txt = document.createTextNode("game Over :(");
+                let txt = document.createTextNode("game Over");
                 span.appendChild(txt)
                 finishMessage.appendChild(span)
             }
